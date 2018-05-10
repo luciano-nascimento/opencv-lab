@@ -1,4 +1,4 @@
 # OPENCV lab
 
-trying to learn opencv 3.2 using python 3.5
+learning opencv 3.2 using python 3.5
 
