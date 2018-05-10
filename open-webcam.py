@@ -4,20 +4,20 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 while(True):
-    # Capture frame-by-frame
+
+    # cap frame
     ret, frame = cap.read()
 
-    # Our operations on the frame come here
+    # set gray to image
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    # Display the resulting frame
-    #pass gray variable to turn image uncolored
+    # set frame to window
     cv2.imshow('frame',frame)
     #press q to exit
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
     
-# When everything done, release the capture
+#release all
 cap.release()
 cv2.destroyAllWindows()
