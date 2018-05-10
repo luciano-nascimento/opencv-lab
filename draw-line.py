@@ -8,12 +8,10 @@ while(True):
     ret, frame = cap.read()
     #draw line
     #params: frame,two points x,y ,colors in rgb, thickness
-    #horizontal
-    cv2.line(frame,(10,10),(500,10),(185,128,41),3)
-    cv2.line(frame,(10,150),(500,150),(185,128,41),3)  
-    #vertical
-    cv2.line(frame,(10,10),(10,150),(185,128,41),3)
-    cv2.line(frame,(500,10),(500,150),(185,128,41),3)
+    #line
+    cv2.line(frame,(10,10),(500,10),(255,20,147),3)
+    #rectangle
+    cv2.rectangle(frame,(50,50),(250,200),(255,20,147),3)
     cv2.imshow('frame',frame)
     #press q to exit
     if cv2.waitKey(1) & 0xFF == ord('q'):
