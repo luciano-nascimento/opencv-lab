@@ -1,4 +1,4 @@
 # OPENCV trys
 
-trying to learn opencv 3.2 using python
+trying to learn opencv 3.2 using python 3.5
 
